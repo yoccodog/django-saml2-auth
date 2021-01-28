@@ -157,6 +157,7 @@ How to use?
                 'GET_METADATA_AUTO_CONF_URLS': 'path.to.your.after.metadata.conf.hook.method',
             },
             'ASSERTION_URL': 'https://mysite.com', # Custom URL to validate incoming SAML requests against
+            'ASSERTION_SCHEME': 'https', # use this to override the scheme used in the assertion url
             'ENTITY_ID': 'https://mysite.com/saml2_auth/acs/', # Populates the Issuer element in authn request
             'NAME_ID_FORMAT': FormatString, # Sets the Format property of authn NameIDPolicy element
             'USE_JWT': False, # Set this to True if you are running a Single Page Application (SPA) with Django Rest Framework (DRF), and are using JWT authentication to authorize client users
